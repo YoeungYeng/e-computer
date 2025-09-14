@@ -8,35 +8,35 @@
                 <li
                     class="flex justify-center items-center p-4 bg-white rounded-lg shadow hover:bg-gray-50 transition duration-300">
                     <a href="#" class="flex gap-2 items-center justify-center hover:text-blue-400">
-                        <img src="{{ asset('storage/assets/1.png') }}" class="object-cover" alt="Laptop">
+                        <img src="{{ asset('1.png') }}" class="object-cover" alt="Laptop">
                     </a>
                 </li>
 
                 <li
                     class="flex justify-center items-center p-4 bg-white rounded-lg shadow hover:bg-gray-50 transition duration-300">
                     <a href="#" class="flex gap-2 items-center justify-center hover:text-blue-400">
-                        <img src="{{ asset('storage/assets/2.png') }}" class="object-cover" alt="PC">
+                        <img src="{{ asset('2.png') }}" class="object-cover" alt="PC">
                     </a>
                 </li>
 
                 <li
                     class="flex justify-center items-center p-4 bg-white rounded-lg shadow hover:bg-gray-50 transition duration-300">
                     <a href="#" class="flex gap-2 items-center justify-center hover:text-blue-400">
-                        <img src="{{ asset('storage/assets/3.png') }}" class="object-cover" alt="Peripheral">
+                        <img src="{{ asset('3.png') }}" class="object-cover" alt="Peripheral">
                     </a>
                 </li>
 
                 <li
                     class="flex justify-center items-center p-4 bg-white rounded-lg shadow hover:bg-gray-50 transition duration-300">
                     <a href="#" class="flex gap-2 items-center justify-center hover:text-blue-400">
-                        <img src="{{ asset('storage/assets/3.png') }}" class="object-cover" alt="Icon">
+                        <img src="{{ asset('3.png') }}" class="object-cover" alt="Icon">
                     </a>
                 </li>
 
                 <li
                     class="flex justify-center items-center p-4 bg-white rounded-lg shadow hover:bg-gray-50 transition duration-300">
                     <a href="#" class="flex gap-2 items-center justify-center hover:text-blue-400">
-                        <img src="{{ asset('storage/assets/4.png') }}" class="object-cover" alt="Laptop Again">
+                        <img src="{{ asset('4.png') }}" class="object-cover" alt="Laptop Again">
                     </a>
                 </li>
             </ul>
@@ -46,7 +46,7 @@
 
         <div class="w-full  rounded-lg">
             <div class="flex w-full">
-                <img src="{{ asset('storage/assets/cd354d10e0e48c98e5406bc2236397bb.gif') }}" alt="">
+                <img src="{{ asset('cd354d10e0e48c98e5406bc2236397bb.gif') }}" alt="">
             </div>
             <div class="mt-6 grid grid-cols-3 gap-6">
 

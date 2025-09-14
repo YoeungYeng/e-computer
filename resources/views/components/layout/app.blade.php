@@ -127,7 +127,7 @@
                         <a href="{{ url('/') }}"
                             class="flex gap-2 items-center justify-center duration-300 transition 
                   {{ Request::is('/') ? 'text-blue-600 font-bold ' : 'hover:text-blue-400' }}">
-                            <img src="{{ asset('storage/assets/laptop.png') }}" class="h-12 w-12 object-cover"
+                            <img src="{{ asset('laptop.png') }}" class="h-12 w-12 object-cover"
                                 alt="Laptop">
                             <span>Laptop</span>
                         </a>
@@ -137,7 +137,7 @@
                         <a href="{{ url('/hardware') }}"
                             class="flex gap-2 items-center justify-center duration-300 transition 
                   {{ Request::is('hardware') ? 'text-blue-600 font-bold ' : 'hover:text-blue-400' }}">
-                            <img src="{{ asset('storage/assets/pc.png') }}" class="h-12 w-12 object-cover"
+                            <img src="{{ asset('pc.png') }}" class="h-12 w-12 object-cover"
                                 alt="PC Hardware">
                             <span>PC Hardware</span>
                         </a>
@@ -147,7 +147,7 @@
                         <a href="{{ url('/peripherals') }}"
                             class="flex gap-2 items-center justify-center duration-300 transition 
                   {{ Request::is('peripherals') ? 'text-blue-600 font-bold ' : 'hover:text-blue-400' }}">
-                            <img src="{{ asset('storage/assets/perail.png') }}" class="h-12 w-12 object-cover"
+                            <img src="{{ asset('perail.png') }}" class="h-12 w-12 object-cover"
                                 alt="Peripherals">
                             <span>Peripherals</span>
                         </a>
@@ -157,7 +157,7 @@
                         <a href="{{ url('/accessories') }}"
                             class="flex gap-2 items-center justify-center duration-300 transition 
                   {{ Request::is('accessories') ? 'text-blue-600 font-bold ' : 'hover:text-blue-400' }}">
-                            <img src="{{ asset('storage/assets/12.svg') }}" class="h-12 w-12 object-cover"
+                            <img src="{{ asset('12.svg') }}" class="h-12 w-12 object-cover"
                                 alt="Accessories">
                             <span>Accessories</span>
                         </a>
@@ -167,7 +167,7 @@
                         <a href="{{ url('/pcset') }}"
                             class="flex gap-2 items-center justify-center duration-300 transition 
                   {{ Request::is('pcset') ? 'text-blue-600 font-bold bg-white' : 'hover:text-blue-400' }}">
-                            <img src="{{ asset('storage/assets/laptop.png') }}" class="h-12 w-12 object-cover"
+                            <img src="{{ asset('laptop.png') }}" class="h-12 w-12 object-cover"
                                 alt="PC Set">
                             <span>PC Set</span>
                         </a>
