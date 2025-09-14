@@ -32,7 +32,7 @@ class HardWardController extends Controller
             ]
         ],
         [
-            'id' => 2,
+            'id' => 3,
             'name' => 'Laptop',
             'brand' => 'HP',
             'image' => '3.jpeg',
@@ -44,7 +44,7 @@ class HardWardController extends Controller
             ]
         ],
         [
-            'id' => 2,
+            'id' => 4,
             'name' => 'Desktop',
             'brand' => 'HP',
             'image' => '10.jpeg',
@@ -56,7 +56,7 @@ class HardWardController extends Controller
             ]
         ],
         [
-            'id' => 2,
+            'id' => 5,
             'name' => 'Desktop',
             'brand' => 'HP',
             'image' => '5.jpeg',
@@ -68,7 +68,7 @@ class HardWardController extends Controller
             ]
         ],
         [
-            'id' => 2,
+            'id' => 6,
             'name' => 'Desktop',
             'brand' => 'HP',
             'image' => '6.jpeg',
@@ -80,7 +80,7 @@ class HardWardController extends Controller
             ]
         ],
         [
-            'id' => 2,
+            'id' => 7,
             'name' => 'Desktop',
             'brand' => 'HP',
             'image' => '7.jpeg',
@@ -92,7 +92,7 @@ class HardWardController extends Controller
             ]
         ],
         [
-            'id' => 2,
+            'id' => 8,
             'name' => 'Desktop',
             'brand' => 'HP',
             'image' => '8.jpeg',

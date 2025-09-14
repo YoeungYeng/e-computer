@@ -164,9 +164,9 @@
                     </li>
 
                     <li class="inline-flex p-6 w-56 justify-center items-center">
-                        <a href="{{ url('/pc-set') }}"
+                        <a href="{{ url('/pcset') }}"
                             class="flex gap-2 items-center justify-center duration-300 transition 
-                  {{ Request::is('pc-set') ? 'text-blue-600 font-bold bg-white' : 'hover:text-blue-400' }}">
+                  {{ Request::is('pcset') ? 'text-blue-600 font-bold bg-white' : 'hover:text-blue-400' }}">
                             <img src="{{ asset('storage/assets/laptop.png') }}" class="h-12 w-12 object-cover"
                                 alt="PC Set">
                             <span>PC Set</span>

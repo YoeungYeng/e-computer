@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Computer;
-use App\Http\Requests\StoreComputerRequest;
-use App\Http\Requests\UpdateComputerRequest;
+use Illuminate\Http\Request;
 
-class ComputerController extends Controller
+class PCsetController extends Controller
 {
-
     protected $computers = [
         [
             'id' => 1,
@@ -26,7 +23,7 @@ class ComputerController extends Controller
             'id' => 2,
             'name' => 'Mouse',
             'brand' => 'HP',
-            'image' => '9.jpeg',
+            'image' => '2.jpeg',
             'price' => 600,
             'specs' => [
                 'processor' => 'Intel i3',
@@ -38,7 +35,7 @@ class ComputerController extends Controller
             'id' => 3,
             'name' => 'Laptop',
             'brand' => 'HP',
-            'image' => '7.jpeg',
+            'image' => '3.jpeg',
             'price' => 600,
             'specs' => [
                 'processor' => 'Intel i3',
@@ -62,7 +59,7 @@ class ComputerController extends Controller
             'id' => 5,
             'name' => 'Desktop',
             'brand' => 'HP',
-            'image' => '10.jpeg',
+            'image' => '5.jpeg',
             'price' => 600,
             'specs' => [
                 'processor' => 'Intel i3',
@@ -74,7 +71,7 @@ class ComputerController extends Controller
             'id' => 6,
             'name' => 'Desktop',
             'brand' => 'HP',
-            'image' => '11.jpeg',
+            'image' => '6.jpeg',
             'price' => 600,
             'specs' => [
                 'processor' => 'Intel i3',
@@ -107,18 +104,9 @@ class ComputerController extends Controller
             ]
         ]
     ];
-    public function index()
+    public function hardware()
     {
         $computers = $this->computers;
-        return view('index', compact('computers'));
-
+        return view('hardware', compact('computers'));
     }
-
-    // show
-    public function show(string $id)
-    {
-        $computer = collect($this->computers)->firstWhere('id', $id);
-        return view('page-detail', compact('computer'));
-    }
-   
 }

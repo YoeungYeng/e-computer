@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Computer;
-use App\Http\Requests\StoreComputerRequest;
-use App\Http\Requests\UpdateComputerRequest;
+use Illuminate\Http\Request;
 
-class ComputerController extends Controller
+class PeripheralsController extends Controller
 {
-
     protected $computers = [
         [
             'id' => 1,
@@ -120,5 +117,4 @@ class ComputerController extends Controller
         $computer = collect($this->computers)->firstWhere('id', $id);
         return view('page-detail', compact('computer'));
     }
-   
 }
