@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class HardWardController extends Controller
 {
-    protected $computers = [
+    protected $hardwares = [
         [
             'id' => 1,
             'name' => 'Intel® Core™ Ultra',
@@ -83,14 +83,14 @@ class HardWardController extends Controller
     ];
     public function hardware()
     {
-        $computers = $this->computers;
-        return view('hardware', compact('computers'));
+        $hardwares = $this->hardwares;
+        return view('hardware', compact('hardwares'));
     }
 
 // show details of a single computer
     public function show(string $id)
     {
-        $computer = collect($this->computers)->firstWhere('id', $id);
-        return view('page-detail', compact('computer'));
+        $hardward = collect($this->hardwares)->firstWhere('id', $id);
+        return view('page-detail', compact('hardward'));
     }
 }
