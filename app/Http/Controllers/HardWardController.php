@@ -91,6 +91,6 @@ class HardWardController extends Controller
     public function show(string $id)
     {
         $hardward = collect($this->hardwares)->firstWhere('id', $id);
-        return view('page-detail', compact('hardward'));
+        return view('page-detail-hardware', compact('hardward'));
     }
 }
