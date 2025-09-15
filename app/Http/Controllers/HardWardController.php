@@ -9,9 +9,9 @@ class HardWardController extends Controller
     protected $computers = [
         [
             'id' => 1,
-            'name' => 'Laptop',
-            'brand' => 'Dell',
-            'image' => '1.jpeg',
+            'name' => 'Intel® Core™ Ultra',
+            'brand' => 'Inel®',
+            'image' => '0e1f0893a164631a158040c6d414ca2b.jpg',
             'price' => 800,
             'specs' => [
                 'processor' => 'Intel i5',
@@ -21,9 +21,9 @@ class HardWardController extends Controller
         ],
         [
             'id' => 2,
-            'name' => 'Mouse',
-            'brand' => 'HP',
-            'image' => '2.jpeg',
+            'name' => '14th Intel® Core™ i3',
+            'brand' => 'Intel® ',
+            'image' => '4e806f02a9b31e60197734b3f667acd1.jpg',
             'price' => 600,
             'specs' => [
                 'processor' => 'Intel i3',
@@ -33,9 +33,9 @@ class HardWardController extends Controller
         ],
         [
             'id' => 3,
-            'name' => 'Laptop',
-            'brand' => 'HP',
-            'image' => '3.jpeg',
+            'name' => 'Intel® Core™ i5-12400',
+            'brand' => 'Intel® ',
+            'image' => '8c9be2c7b8dd4af4553c5f05d11168f8.jpg',
             'price' => 600,
             'specs' => [
                 'processor' => 'Intel i3',
@@ -45,9 +45,9 @@ class HardWardController extends Controller
         ],
         [
             'id' => 4,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '10.jpeg',
+            'name' => 'AMD Ryzen™ 7 9700X Tray',
+            'brand' => 'AMD',
+            'image' => '7688aa13dcb6ff774d0cf779995c8e1b.jpg',
             'price' => 600,
             'specs' => [
                 'processor' => 'Intel i3',
@@ -57,9 +57,9 @@ class HardWardController extends Controller
         ],
         [
             'id' => 5,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '5.jpeg',
+            'name' => 'Ryzen 7000 Series',
+            'brand' => 'AMD',
+            'image' => 'ec23f44b4deae7a6402e228190d8993b.jpg',
             'price' => 600,
             'specs' => [
                 'processor' => 'Intel i3',
@@ -69,9 +69,9 @@ class HardWardController extends Controller
         ],
         [
             'id' => 6,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '6.jpeg',
+            'name' => 'DeepCool LS720 SE Digital',
+            'brand' => 'DeepCool',
+            'image' => 'a58012cbcaa69b511192fbbb075dd818.png',
             'price' => 600,
             'specs' => [
                 'processor' => 'Intel i3',
@@ -79,30 +79,7 @@ class HardWardController extends Controller
                 'storage' => '1TB HDD'
             ]
         ],
-        [
-            'id' => 7,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '7.jpeg',
-            'price' => 600,
-            'specs' => [
-                'processor' => 'Intel i3',
-                'ram' => '4GB',
-                'storage' => '1TB HDD'
-            ]
-        ],
-        [
-            'id' => 8,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '8.jpeg',
-            'price' => 600,
-            'specs' => [
-                'processor' => 'Intel i3',
-                'ram' => '4GB',
-                'storage' => '1TB HDD'
-            ]
-        ]
+        
     ];
     public function hardware()
     {
