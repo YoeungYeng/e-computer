@@ -11,6 +11,7 @@ Route::get('/hardware', [HardWardController::class, 'hardware']);
 // page details
 Route::get('/computers/{id}', [ComputerController::class, 'show']);
 Route::get('/peripherals', [PeripheralsController::class, 'index']);
+Route::get('/peripherals/{id}', [PeripheralsController::class, 'show']);
 Route::get('/accessories', [AccessorieController::class, 'index']);
 
 Route::get('/pcset', [AccessorieController::class, 'index']);

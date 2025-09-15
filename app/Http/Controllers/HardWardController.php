@@ -86,4 +86,11 @@ class HardWardController extends Controller
         $computers = $this->computers;
         return view('hardware', compact('computers'));
     }
+
+// show details of a single computer
+    public function show(string $id)
+    {
+        $computer = collect($this->computers)->firstWhere('id', $id);
+        return view('page-detail', compact('computer'));
+    }
 }
