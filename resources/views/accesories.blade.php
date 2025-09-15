@@ -53,7 +53,7 @@
                 @foreach ($computers as $computer)
                     <div
                         class="bg-white border border-gray-300 rounded-lg shadow-md flex flex-col items-center justify-center p-3 hover:shadow-lg transition">
-                        <a href="{{ url('peripherals/' . $computer['id']) }}" class="h-32 w-full">
+                        <a href="{{ url('accessories/' . $computer['id']) }}" class="h-32 w-full">
                             <img src="{{ asset($computer['image']) }}" class="h-32 w-full object-cover mb-2 rounded-lg"
                                 alt="{{ $computer['name'] }}">
                         </a>

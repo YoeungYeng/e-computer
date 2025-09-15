@@ -56,7 +56,7 @@ class AccessorieController extends Controller
     public function index()
     {
         $computers = $this->computers;
-        return view('index', compact('computers'));
+        return view('accesories', compact('computers'));
 
     }
 

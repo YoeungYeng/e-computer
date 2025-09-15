@@ -9,9 +9,9 @@ class PCsetController extends Controller
     protected $computers = [
         [
             'id' => 1,
-            'name' => 'Laptop',
-            'brand' => 'Dell',
-            'image' => '1.jpeg',
+            'name' => 'ThinkCentre Neo 50T -  Intel® Core i3-12100 Processor',
+            'brand' => 'ThinkCentre',
+            'image' => '6d3119eb3c603ccf6defe2a07976524f.jpg',
             'price' => 800,
             'specs' => [
                 'processor' => 'Intel i5',
@@ -21,9 +21,9 @@ class PCsetController extends Controller
         ],
         [
             'id' => 2,
-            'name' => 'Mouse',
-            'brand' => 'HP',
-            'image' => '2.jpeg',
+            'name' => 'IdeaCentre AIO 3 22IAP7 -  Intel® Core™ i3-1220P Processor',
+            'brand' => 'IdeaCentre',
+            'image' => '29e259eac3a8ac7ea92485c2713d0102.png',
             'price' => 600,
             'specs' => [
                 'processor' => 'Intel i3',
@@ -33,9 +33,9 @@ class PCsetController extends Controller
         ],
         [
             'id' => 3,
-            'name' => 'Laptop',
-            'brand' => 'HP',
-            'image' => '3.jpeg',
+            'name' => 'ThinkCentre Neo 30A 24" (AIO) -  Intel® Core™ i3-1220P Processor',
+            'brand' => 'ThinkCentre',
+            'image' => '006383cbcb6d2eb929ddc39eefba686b.jpg',
             'price' => 600,
             'specs' => [
                 'processor' => 'Intel i3',
@@ -45,10 +45,10 @@ class PCsetController extends Controller
         ],
         [
             'id' => 4,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '10.jpeg',
-            'price' => 600,
+            'name' => 'IdeaCentre AIO 24IRH9 - Intel® Core™ i5-13420H',
+            'brand' => 'IdeaCentre',
+            'image' => '84816a4329f66df7b22e6bc116625ae2.png',
+            'price' => 200,
             'specs' => [
                 'processor' => 'Intel i3',
                 'ram' => '4GB',
@@ -57,56 +57,27 @@ class PCsetController extends Controller
         ],
         [
             'id' => 5,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '5.jpeg',
-            'price' => 600,
+            'name' => 'ThinkCentre Neo 30A 24" (AIO) - Intel® Core™ i5-1240P Processor',
+            'brand' => 'ThinkCentre',
+            'image' => 'bc1077bd54ad6b44ade5fe9dac85b0df.jpg',
+            'price' => 700,
             'specs' => [
                 'processor' => 'Intel i3',
                 'ram' => '4GB',
                 'storage' => '1TB HDD'
             ]
         ],
-        [
-            'id' => 6,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '6.jpeg',
-            'price' => 600,
-            'specs' => [
-                'processor' => 'Intel i3',
-                'ram' => '4GB',
-                'storage' => '1TB HDD'
-            ]
-        ],
-        [
-            'id' => 7,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '7.jpeg',
-            'price' => 600,
-            'specs' => [
-                'processor' => 'Intel i3',
-                'ram' => '4GB',
-                'storage' => '1TB HDD'
-            ]
-        ],
-        [
-            'id' => 8,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '8.jpeg',
-            'price' => 600,
-            'specs' => [
-                'processor' => 'Intel i3',
-                'ram' => '4GB',
-                'storage' => '1TB HDD'
-            ]
-        ]
+        
     ];
-    public function hardware()
+    public function index()
     {
         $computers = $this->computers;
-        return view('hardware', compact('computers'));
+        return view('pcset', compact('computers'));
+    }
+
+    public function show(string $id)
+    {
+        $computer = collect($this->computers)->firstWhere('id', $id);
+        return view('pcset-detail', compact('computer'));
     }
 }
