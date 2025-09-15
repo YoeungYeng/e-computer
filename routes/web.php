@@ -3,6 +3,7 @@
 use App\Http\Controllers\AccessorieController;
 use App\Http\Controllers\ComputerController;
 use App\Http\Controllers\HardWardController;
+use App\Http\Controllers\PCsetController;
 use App\Http\Controllers\PeripheralsController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,8 +17,8 @@ Route::get('/hardware/{id}', [HardWardController::class, 'show']);
 Route::get('/peripherals', [PeripheralsController::class, 'index']);
 Route::get('/peripherals/{id}', [PeripheralsController::class, 'show']);
 
-Route::get('/accessories', [AccessorieController::class, 'index']);
+Route::get('/accessories', [AccessorieController::class, 'acessories']);
 Route::get('/accessories/{id}', [AccessorieController::class, 'show']);
 
-Route::get('/pcset', [AccessorieController::class, 'index']);
-Route::get('/pcset/{id}', [AccessorieController::class, 'show']);
+Route::get('/pcset', [PCsetController::class, 'index']);
+Route::get('/pcset/{id}', [PCsetController::class, 'show']);

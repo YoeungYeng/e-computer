@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class AccessorieController extends Controller
 {
-    protected $computers = [
+    protected $accsories = [
         [
             'id' => 1,
             'name' => 'AX6600 Tri-Band Wi-Fi 6 Router',
@@ -53,9 +53,9 @@ class AccessorieController extends Controller
         ],
 
     ];
-    public function index()
+    public function acessories()
     {
-        $computers = $this->computers;
+        $computers = $this->accsories;
         return view('accesories', compact('computers'));
 
     }
@@ -63,7 +63,7 @@ class AccessorieController extends Controller
     // show
     public function show(string $id)
     {
-        $computer = collect($this->computers)->firstWhere('id', $id);
+        $computer = collect($this->accsories)->firstWhere('id', $id);
         return view('accesories-detail', compact('computer'));
     }
 }

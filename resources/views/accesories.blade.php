@@ -46,7 +46,7 @@
 
         <div class="w-full  rounded-lg">
             <div class="flex w-full">
-                <img src="{{ asset('cd354d10e0e48c98e5406bc2236397bb.gif') }}" alt="">
+                <img src="{{ asset('accsories.jpg') }}" alt="">
             </div>
             <div class="mt-6 grid grid-cols-3 gap-6">
 
