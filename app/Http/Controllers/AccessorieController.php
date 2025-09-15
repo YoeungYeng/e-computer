@@ -64,6 +64,6 @@ class AccessorieController extends Controller
     public function show(string $id)
     {
         $computer = collect($this->computers)->firstWhere('id', $id);
-        return view('page-detail', compact('computer'));
+        return view('accesories-detail', compact('computer'));
     }
 }

@@ -17,6 +17,7 @@ Route::get('/peripherals', [PeripheralsController::class, 'index']);
 Route::get('/peripherals/{id}', [PeripheralsController::class, 'show']);
 
 Route::get('/accessories', [AccessorieController::class, 'index']);
+Route::get('/accessories/{id}', [AccessorieController::class, 'show']);
 
 Route::get('/pcset', [AccessorieController::class, 'index']);
-
+Route::get('/pcset/{id}', [AccessorieController::class, 'show']);
