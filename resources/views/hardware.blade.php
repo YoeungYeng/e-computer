@@ -49,12 +49,14 @@
                 <img src="{{ asset('hard.jpg') }}" alt="">
             </div>
             <div class="mt-6 grid grid-cols-3 gap-6">
-                
+
                 @foreach ($computers as $computer)
                     <div
                         class="bg-white border border-gray-300 rounded-lg shadow-md flex flex-col items-center justify-center p-3 hover:shadow-lg transition">
-                        <img src="{{ $computer['image'] }}" class="h-32 w-full object-cover mb-2 rounded-lg"
-                            alt="{{ $computer['name'] }}">
+                        <a href="{{ url('computers/' . $computer['id']) }}">
+                            <img src="{{ $computer['image'] }}" class="h-32 w-full object-cover mb-2 rounded-lg"
+                                alt="{{ $computer['name'] }}">
+                        </a>
                         <h3 class="text-lg font-semibold">{{ $computer['name'] }}</h3>
                         <p class="text-gray-600">${{ $computer['price'] }}</p>
                     </div>
