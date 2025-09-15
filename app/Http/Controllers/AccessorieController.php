@@ -9,46 +9,34 @@ class AccessorieController extends Controller
     protected $computers = [
         [
             'id' => 1,
-            'name' => 'Laptop',
-            'brand' => 'Dell',
-            'image' => '1.jpeg',
-            'price' => 800,
-            'specs' => [
-                'processor' => 'Intel i5',
-                'ram' => '8GB',
-                'storage' => '256GB SSD'
-            ]
+            'name' => 'AX6600 Tri-Band Wi-Fi 6 Router',
+            'brand' => 'Tri-Band',
+            'image' => '2f9d773aa675a10884cc129aaa514363.jpg',
+            'price' => 100,
+
         ],
         [
             'id' => 2,
-            'name' => 'Mouse',
-            'brand' => 'HP',
-            'image' => '9.jpeg',
+            'name' => 'TP-Link Wifi 6 AX1500 Smart WiFi Router',
+            'brand' => 'Cisco',
+            'image' => '42bfa8a3cbcfb41070d4fd44bc96fce6.jpg',
             'price' => 600,
-            'specs' => [
-                'processor' => 'Intel i3',
-                'ram' => '4GB',
-                'storage' => '1TB HDD'
-            ]
+
         ],
         [
             'id' => 3,
-            'name' => 'Laptop',
-            'brand' => 'HP',
-            'image' => '7.jpeg',
-            'price' => 600,
-            'specs' => [
-                'processor' => 'Intel i3',
-                'ram' => '4GB',
-                'storage' => '1TB HDD'
-            ]
+            'name' => 'TP-Link TL-SF1016D 16-Port',
+            'brand' => 'Cisco',
+            'image' => '63ad9ee2d959e7e04f379e4e37d99435.jpg',
+            'price' => 40,
+
         ],
         [
             'id' => 4,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '10.jpeg',
-            'price' => 600,
+            'name' => 'TP-Link TL-SF1005D 5-Port 10',
+            'brand' => 'Cisco',
+            'image' => 'bc9734ff21e72a590e7cb4ba2dd4e1d4.jpg',
+            'price' => 100,
             'specs' => [
                 'processor' => 'Intel i3',
                 'ram' => '4GB',
@@ -57,52 +45,13 @@ class AccessorieController extends Controller
         ],
         [
             'id' => 5,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '10.jpeg',
+            'name' => 'Gigabyte WB1733D-I 1733Mbps',
+            'brand' => 'Cisco',
+            'image' => 'efefbd92a174ba4a876d10ffd8de4a53.jpg',
             'price' => 600,
-            'specs' => [
-                'processor' => 'Intel i3',
-                'ram' => '4GB',
-                'storage' => '1TB HDD'
-            ]
+
         ],
-        [
-            'id' => 6,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '11.jpeg',
-            'price' => 600,
-            'specs' => [
-                'processor' => 'Intel i3',
-                'ram' => '4GB',
-                'storage' => '1TB HDD'
-            ]
-        ],
-        [
-            'id' => 7,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '7.jpeg',
-            'price' => 600,
-            'specs' => [
-                'processor' => 'Intel i3',
-                'ram' => '4GB',
-                'storage' => '1TB HDD'
-            ]
-        ],
-        [
-            'id' => 8,
-            'name' => 'Desktop',
-            'brand' => 'HP',
-            'image' => '8.jpeg',
-            'price' => 600,
-            'specs' => [
-                'processor' => 'Intel i3',
-                'ram' => '4GB',
-                'storage' => '1TB HDD'
-            ]
-        ]
+
     ];
     public function index()
     {
