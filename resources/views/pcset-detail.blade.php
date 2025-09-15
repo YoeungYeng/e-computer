@@ -15,12 +15,7 @@
                     <p class="text-gray-700 mb-4">Brand: {{ $computer['brand'] }}</p>
                     <p class="text-gray-700 mb-4">Price: ${{ $computer['price'] }}</p>
                     <h3 class="text-xl font-semibold mb-2">Specifications:</h3>
-                    <ul class="list-disc list-inside text-gray-700">
-                        @foreach ($computer['specs'] as $key => $value)
-                            <li>{{ ucfirst($key) }}: {{ $value }}</li>
-                        @endforeach
-                    </ul>
-
+                    
                     <div class="flex  items-center gap-4 mt-6">
                         {{-- quantity --}}
                         {{-- button increase --}}
