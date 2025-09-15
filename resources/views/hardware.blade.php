@@ -53,7 +53,7 @@
                 @foreach ($hardwares as $hardware)
                     <div
                         class="bg-white border border-gray-300 rounded-lg shadow-md flex flex-col items-center justify-center p-3 hover:shadow-lg transition">
-                        <a href="{{ url('peripherals/' . $hardware['id']) }}">
+                        <a href="{{ url('hardware/' . $hardware['id']) }}">
                             <img src="{{ $hardware['image'] }}" class="h-32 w-full object-cover mb-2 rounded-lg"
                                 alt="{{ $hardware['name'] }}">
                         </a>
